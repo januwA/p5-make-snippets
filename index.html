@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>make snippets</title>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      textarea {
+        flex: 1;
+        font-family: consolas;
+        font-size: 1rem;
+      }
+      .CodeMirror {
+        flex: 1;
+        min-height: 100%;
+        margin: 1px;
+        font-family: 'consolas' !important;
+      }
+      #textarea-box {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+    </style>
+    <script src="https://unpkg.com/p5@0.7.2/lib/p5.min.js"></script>
+    <script src="https://unpkg.com/p5@0.7.2/lib/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/codemirror@5.48.0/lib/codemirror.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/codemirror@5.48.0/lib/codemirror.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/codemirror@5.48.0/theme/dracula.css"
+    />
+    <script src="https://unpkg.com/codemirror@5.48.0/mode/javascript/javascript.js"></script>
+    <script src="./text.js"></script>
+    <script src="./sketch.js"></script>
+  </head>
+  <body>
+    <div id="textarea-box">
+      <textarea id="input"></textarea>
+      <button style="align-self: center;" id="to">To</button>
+      <textarea id="output"></textarea>
+    </div>
+  </body>
+</html>
