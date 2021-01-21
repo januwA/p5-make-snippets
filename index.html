@@ -13,6 +13,10 @@
         flex-direction: column;
         height: 100vh;
       }
+
+      input {
+        padding: 8px;
+      }
       textarea {
         flex: 1;
         font-family: consolas;
@@ -48,9 +52,12 @@
     <script src="./sketch.js"></script>
   </head>
   <body>
+    <div style="padding: 4px;">
+      <input class="prefix" type="text" placeholder="prefix">
+      <input class="description" type="text" placeholder="description">
+    </div>
     <div id="textarea-box">
       <textarea id="input"></textarea>
-      <button style="align-self: center;" id="to">To</button>
       <textarea id="output"></textarea>
     </div>
   </body>
